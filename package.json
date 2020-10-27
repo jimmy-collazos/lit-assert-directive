@@ -1,6 +1,6 @@
 {
   "name": "lit-assert-directive",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lit HTML directive for assertion value and render some options",
   "main": "./lit-assert-directive.js",
   "module": "./lit-assert-directive.js",
