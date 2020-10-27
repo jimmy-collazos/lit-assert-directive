@@ -24,7 +24,7 @@ npm install --save lit-assert-directive
 
 **Unpkg**
 ```javascript
-import {createDeepTreeWalkerIterator} from 'https://unpkg.com/lit-assert-directive?module'
+import {assertDirective, assertAsyncDirective} from 'https://unpkg.com/lit-assert-directive?module'
 ```
 
 ## # assertDirective(trueOptionResult, falseOptionResult)
@@ -41,7 +41,7 @@ Devuelve una función que recibe un único argumento que será transformado a *B
 ### Ejemplo:
 
 ```javascript
-import {render, html} from '../node_modules/lit-html/lit-html.js'
+import {render, html} from 'lit-html'
 import {assertDirective} from 'lit-assert-directive';
 
 const assertPart = assertDirective('ok', 'ko');
@@ -90,7 +90,7 @@ Devuelve una función que recibe un único argumento que será una _Promise_ y s
 
 ### Ejemplo
 ```javascript
-import {render, html} from '../node_modules/lit-html/lit-html.js'
+import {render, html} from 'lit-html'
 import {assertAsyncDirective} from 'lit-assert-directive';
 
 const assertAsyncPart = assertAsyncDirective('pending...', 'ok', 'ko');
@@ -132,7 +132,6 @@ render(html`
     <li> <span @click=${assertAsyncEventPart(pendingPromise)}>ko</span></li>
   </ul>`, window.container);
 ```
-
 
 ## Argumento OptionResult
 Según la parte que se quiere cambiar:

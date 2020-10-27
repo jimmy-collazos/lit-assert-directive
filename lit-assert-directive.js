@@ -1,5 +1,4 @@
-import { directive } from 'lit-html/lib/directive.js';
-import { nothing } from 'lit-html/lib/part.js';
+import { directive, nothing } from "lit-html";
 
 const parseValue = (value, arg) => typeof value === 'function' && value(arg) || value;
 
