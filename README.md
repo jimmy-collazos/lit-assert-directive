@@ -1,31 +1,10 @@
-![Tree](./header.png)
-<sup>_Social Media Photo by [Damon Lam](https://unsplash.com/@dayday95) on [Unsplash](https://unsplash.com/photos/Md9UK7frBv0)_</sup>
+> :warning: :warning:  **Paquete deprecado** :warning: :warning: en favor de https://github.com/jimmy-collazos/lit-directive-assert para respetar una convención de nombres (para directivas de lit-html) estándar. Por favor use `lit-directive-assert`
 
-# Assert Directive for LitElement
-
-<p align="center">
-  <img alt="Formato de exportación: UMD, CJS, ESM" src="https://img.shields.io/badge/fomat-umd%20cjs%20esm-yellowgreen" />
-  <img alt="Distribución: Npm, Unpackage" src="https://img.shields.io/badge/%F0%9F%93%A6-npm%20unpk-yellowgreen" />
-  <img alt="Licencia: GPL 3.0" src="https://img.shields.io/badge/GPL 3.0-license-yellowgreen" />
-</p>
+# Assert Directive for lit-html
 
 Esta directiva exporta dos factorías de [Directivas, de LitHtml,](https://lit-html.polymer-project.org/guide/creating-directives) para pintar un resultado en función de un valor. Éste valor puede ser un Promise o otro valor; según la parte (propiedad, atributo, evento, contenido) que se quiera actualizar.
 
 Está muy enfocado a un estilo más funcional; donde creamos una función que devuelve un templete en función del resultado.
-
-## Uso / Instalación
-
-Esta herramienta se exporta en los formatos CommonJs, IFFIE, ESM. Puedes descargarlo o instalarlo a través de NPM o desde Unpkg.
-
-**Npm**
-```sh
-npm install --save lit-assert-directive
-```
-
-**Unpkg**
-```javascript
-import {assertDirective, assertAsyncDirective} from 'https://unpkg.com/lit-assert-directive?module'
-```
 
 ## # assertDirective(trueOptionResult, falseOptionResult)
 
